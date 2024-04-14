@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+
+            <nav>
+                <div class="circle">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="circle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+            <img src="https://lyricsrefreshing.com/wp-content/uploads/2024/03/1000173130.webp" alt="" class="song-img">
+            <h1>God Damn</h1>
+            <p>Karan Aujla x Badshah</p>
+
+
+            <audio>
+                <source src="./assessts/God Damn Ek Tha Raja 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <i class="ri-skip-back-line" id="back"></i>
+                </div>
+
+                <div>
+                    <i class="ri-play-line" id="play"></i>
+                </div>
+
+                <div>
+                    <i class="ri-skip-forward-line" id="next"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
